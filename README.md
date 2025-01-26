@@ -25,6 +25,21 @@ I recently worked on a Form Validation and Submission Application that dynamical
 - JavaScript:
     - DOM Manipulation for dynamic validation and UI updates.
     - Fetch API for sending data to the server.
+ 
+## How It Works:
+
+# Form Data Handling:
+- The formData object stores the values for name, email, status, and gender.
+- Each input field (name, email, etc.) updates the formData dynamically through change events.
+
+# Validation:
+- On form submission, validateFormData checks if required fields are empty and displays error messages.
+# API Integration:
+- The submitFormData function sends the formData to the GoRest API using a POST request.
+- If the email already exists, the app displays an appropriate error message (Email Already Exists).
+# Prevent Default Submission:
+The submit event is intercepted using event.preventDefault() to ensure the form doesn't refresh the page.
+
 
 
 # Screenshot of the Project
